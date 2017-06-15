@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0B737F158AC2882F6EB53D6 /* Pods_PokemonGORadar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE3A48B08799682CC61E9CD /* Pods_PokemonGORadar.framework */; };
 		DBB6FA5A1EF1D45A0076CDAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */; };
 		DBB6FA5C1EF1D45A0076CDAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */; };
 		DBB6FA5F1EF1D45A0076CDAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB6FA5D1EF1D45A0076CDAA /* Main.storyboard */; };
 		DBB6FA611EF1D45A0076CDAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB6FA601EF1D45A0076CDAA /* Assets.xcassets */; };
 		DBB6FA641EF1D45A0076CDAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB6FA621EF1D45A0076CDAA /* LaunchScreen.storyboard */; };
+		DBB6FA6C1EF32A380076CDAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBB6FA6B1EF32A380076CDAA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E8EE337020BCF4EFCB077A0 /* Pods-PokemonGORadar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonGORadar.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonGORadar/Pods-PokemonGORadar.release.xcconfig"; sourceTree = "<group>"; };
+		CD2CCBFE6B8A386D45BF209B /* Pods-PokemonGORadar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonGORadar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonGORadar/Pods-PokemonGORadar.debug.xcconfig"; sourceTree = "<group>"; };
 		DBB6FA561EF1D45A0076CDAA /* PokemonGORadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGORadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		DBB6FA601EF1D45A0076CDAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBB6FA631EF1D45A0076CDAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBB6FA651EF1D45A0076CDAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB6FA6B1EF32A380076CDAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAE3A48B08799682CC61E9CD /* Pods_PokemonGORadar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonGORadar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B737F158AC2882F6EB53D6 /* Pods_PokemonGORadar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4DF303618EDFAD72F5A4DA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD2CCBFE6B8A386D45BF209B /* Pods-PokemonGORadar.debug.xcconfig */,
+				8E8EE337020BCF4EFCB077A0 /* Pods-PokemonGORadar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DBB6FA4D1EF1D45A0076CDAA = {
 			isa = PBXGroup;
 			children = (
 				DBB6FA581EF1D45A0076CDAA /* PokemonGORadar */,
 				DBB6FA571EF1D45A0076CDAA /* Products */,
+				D4DF303618EDFAD72F5A4DA4 /* Pods */,
+				F86DCDB90BFFF50BDF27547C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,7 @@
 		DBB6FA581EF1D45A0076CDAA /* PokemonGORadar */ = {
 			isa = PBXGroup;
 			children = (
+				DBB6FA6B1EF32A380076CDAA /* GoogleService-Info.plist */,
 				DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */,
 				DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */,
 				DBB6FA5D1EF1D45A0076CDAA /* Main.storyboard */,
@@ -64,6 +83,14 @@
 			path = PokemonGORadar;
 			sourceTree = "<group>";
 		};
+		F86DCDB90BFFF50BDF27547C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAE3A48B08799682CC61E9CD /* Pods_PokemonGORadar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBB6FA681EF1D45A0076CDAA /* Build configuration list for PBXNativeTarget "PokemonGORadar" */;
 			buildPhases = (
+				142708EBA2604386D7D4F663 /* [CP] Check Pods Manifest.lock */,
 				DBB6FA521EF1D45A0076CDAA /* Sources */,
 				DBB6FA531EF1D45A0076CDAA /* Frameworks */,
 				DBB6FA541EF1D45A0076CDAA /* Resources */,
+				411CA6E867243BA81A8B10BC /* [CP] Embed Pods Frameworks */,
+				F4DF5A6AEE006E2CBB531E13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBB6FA641EF1D45A0076CDAA /* LaunchScreen.storyboard in Resources */,
+				DBB6FA6C1EF32A380076CDAA /* GoogleService-Info.plist in Resources */,
 				DBB6FA611EF1D45A0076CDAA /* Assets.xcassets in Resources */,
 				DBB6FA5F1EF1D45A0076CDAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		142708EBA2604386D7D4F663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		411CA6E867243BA81A8B10BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonGORadar/Pods-PokemonGORadar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4DF5A6AEE006E2CBB531E13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonGORadar/Pods-PokemonGORadar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBB6FA521EF1D45A0076CDAA /* Sources */ = {
@@ -259,12 +338,13 @@
 		};
 		DBB6FA691EF1D45A0076CDAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2CCBFE6B8A386D45BF209B /* Pods-PokemonGORadar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X88V8MC7R;
 				INFOPLIST_FILE = PokemonGORadar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MyApp.PokemonGORadar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.pokesearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,12 +352,13 @@
 		};
 		DBB6FA6A1EF1D45A0076CDAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8EE337020BCF4EFCB077A0 /* Pods-PokemonGORadar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X88V8MC7R;
 				INFOPLIST_FILE = PokemonGORadar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MyApp.PokemonGORadar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.pokesearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
