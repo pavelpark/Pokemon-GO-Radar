@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A0B737F158AC2882F6EB53D6 /* Pods_PokemonGORadar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE3A48B08799682CC61E9CD /* Pods_PokemonGORadar.framework */; };
+		DB8EDB5F1EF3345900097B56 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB561EF3345900097B56 /* GeoFire.m */; };
+		DB8EDB601EF3345900097B56 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB581EF3345900097B56 /* GFBase32Utils.m */; };
+		DB8EDB611EF3345900097B56 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB5A1EF3345900097B56 /* GFGeoHash.m */; };
+		DB8EDB621EF3345900097B56 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB5C1EF3345900097B56 /* GFGeoHashQuery.m */; };
+		DB8EDB631EF3345900097B56 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB5E1EF3345900097B56 /* GFQuery.m */; };
 		DBB6FA5A1EF1D45A0076CDAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */; };
 		DBB6FA5C1EF1D45A0076CDAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */; };
 		DBB6FA5F1EF1D45A0076CDAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB6FA5D1EF1D45A0076CDAA /* Main.storyboard */; };
@@ -19,6 +24,22 @@
 /* Begin PBXFileReference section */
 		8E8EE337020BCF4EFCB077A0 /* Pods-PokemonGORadar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonGORadar.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonGORadar/Pods-PokemonGORadar.release.xcconfig"; sourceTree = "<group>"; };
 		CD2CCBFE6B8A386D45BF209B /* Pods-PokemonGORadar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonGORadar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonGORadar/Pods-PokemonGORadar.debug.xcconfig"; sourceTree = "<group>"; };
+		DB8EDB4F1EF3345900097B56 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		DB8EDB501EF3345900097B56 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		DB8EDB511EF3345900097B56 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		DB8EDB521EF3345900097B56 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		DB8EDB531EF3345900097B56 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		DB8EDB551EF3345900097B56 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		DB8EDB561EF3345900097B56 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		DB8EDB571EF3345900097B56 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		DB8EDB581EF3345900097B56 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		DB8EDB591EF3345900097B56 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		DB8EDB5A1EF3345900097B56 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		DB8EDB5B1EF3345900097B56 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		DB8EDB5C1EF3345900097B56 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		DB8EDB5D1EF3345900097B56 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		DB8EDB5E1EF3345900097B56 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		DB8EDB671EF33EF100097B56 /* PokemonGoFinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokemonGoFinder-Bridging-Header.h"; sourceTree = "<group>"; };
 		DBB6FA561EF1D45A0076CDAA /* PokemonGORadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGORadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +72,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB8EDB4D1EF3345900097B56 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				DB8EDB4E1EF3345900097B56 /* API */,
+				DB8EDB531EF3345900097B56 /* GeoFire-Prefix.pch */,
+				DB8EDB541EF3345900097B56 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		DB8EDB4E1EF3345900097B56 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DB8EDB4F1EF3345900097B56 /* GeoFire.h */,
+				DB8EDB501EF3345900097B56 /* GFCircleQuery.h */,
+				DB8EDB511EF3345900097B56 /* GFQuery.h */,
+				DB8EDB521EF3345900097B56 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DB8EDB541EF3345900097B56 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				DB8EDB551EF3345900097B56 /* GeoFire+Private.h */,
+				DB8EDB561EF3345900097B56 /* GeoFire.m */,
+				DB8EDB571EF3345900097B56 /* GFBase32Utils.h */,
+				DB8EDB581EF3345900097B56 /* GFBase32Utils.m */,
+				DB8EDB591EF3345900097B56 /* GFGeoHash.h */,
+				DB8EDB5A1EF3345900097B56 /* GFGeoHash.m */,
+				DB8EDB5B1EF3345900097B56 /* GFGeoHashQuery.h */,
+				DB8EDB5C1EF3345900097B56 /* GFGeoHashQuery.m */,
+				DB8EDB5D1EF3345900097B56 /* GFQuery+Private.h */,
+				DB8EDB5E1EF3345900097B56 /* GFQuery.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
 		DBB6FA4D1EF1D45A0076CDAA = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +131,7 @@
 		DBB6FA581EF1D45A0076CDAA /* PokemonGORadar */ = {
 			isa = PBXGroup;
 			children = (
+				DB8EDB4D1EF3345900097B56 /* GeoFire */,
 				DBB6FA6B1EF32A380076CDAA /* GoogleService-Info.plist */,
 				DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */,
 				DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */,
@@ -79,6 +139,7 @@
 				DBB6FA601EF1D45A0076CDAA /* Assets.xcassets */,
 				DBB6FA621EF1D45A0076CDAA /* LaunchScreen.storyboard */,
 				DBB6FA651EF1D45A0076CDAA /* Info.plist */,
+				DB8EDB671EF33EF100097B56 /* PokemonGoFinder-Bridging-Header.h */,
 			);
 			path = PokemonGORadar;
 			sourceTree = "<group>";
@@ -216,8 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8EDB601EF3345900097B56 /* GFBase32Utils.m in Sources */,
 				DBB6FA5C1EF1D45A0076CDAA /* ViewController.swift in Sources */,
+				DB8EDB611EF3345900097B56 /* GFGeoHash.m in Sources */,
 				DBB6FA5A1EF1D45A0076CDAA /* AppDelegate.swift in Sources */,
+				DB8EDB5F1EF3345900097B56 /* GeoFire.m in Sources */,
+				DB8EDB621EF3345900097B56 /* GFGeoHashQuery.m in Sources */,
+				DB8EDB631EF3345900097B56 /* GFQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.pokesearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokemonGORadar/PokemonGoFinder-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -360,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.pokesearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokemonGORadar/PokemonGoFinder-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -383,6 +451,7 @@
 				DBB6FA6A1EF1D45A0076CDAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
