@@ -24,13 +24,23 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-e9-iaf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4H-S1-ToH">
+                                <rect key="frame" x="10" y="590" width="73" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="ezP-QY-Tw1"/>
+                                    <constraint firstAttribute="height" constant="67" id="hvG-lu-eBi"/>
+                                </constraints>
+                                <state key="normal" image="pokeball"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="D4H-S1-ToH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="4gb-4m-R36"/>
                             <constraint firstAttribute="trailing" secondItem="hE9-e9-iaf" secondAttribute="trailing" id="9Ou-Fh-E35"/>
                             <constraint firstItem="hE9-e9-iaf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AaV-Qt-mhJ"/>
                             <constraint firstItem="hE9-e9-iaf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ECe-0R-tcA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hE9-e9-iaf" secondAttribute="bottom" id="YVx-iR-tIo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D4H-S1-ToH" secondAttribute="bottom" constant="10" id="uMa-in-I3j"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,4 +49,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pokeball" width="97" height="96"/>
+    </resources>
 </document>
