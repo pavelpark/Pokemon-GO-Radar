@@ -22,7 +22,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         mapView.userTrackingMode = MKUserTrackingMode.follow
     }
-
+    
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        }
+    }
     var geoFire: GeoFire!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
