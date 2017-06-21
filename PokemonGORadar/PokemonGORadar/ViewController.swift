@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -22,7 +22,20 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         mapView.userTrackingMode = MKUserTrackingMode.follow
     }
-
+    
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            mapView.showsUserLocation = true 
+        }
+    }
     var geoFire: GeoFire!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
