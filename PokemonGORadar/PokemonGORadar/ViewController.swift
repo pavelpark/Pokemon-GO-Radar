@@ -14,6 +14,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager  = CLLocationManager()
+    var mapHasCenteredOnce = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
         
         mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        if let loc = userLocation.location {
+            
+            if !mapHasCenteredOnce {
+                centerMapOnLocation(location: loc)
+                mapHasCenteredOnce = true
+            }
+        }
     }
     
     var geoFire: GeoFire!
