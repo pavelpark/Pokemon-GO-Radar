@@ -14,6 +14,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager  = CLLocationManager()
+    var mapHasCenteredOnce = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.delegate = self
         
         mapView.userTrackingMode = MKUserTrackingMode.follow
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        locationAuthStatus()
     }
     
     func locationAuthStatus() {
@@ -36,6 +41,33 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             mapView.showsUserLocation = true 
         }
     }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
+        
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        if let loc = userLocation.location {
+            
+            if !mapHasCenteredOnce {
+                centerMapOnLocation(location: loc)
+                mapHasCenteredOnce = true
+            }
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        var annotationView: MKAnnotationView?
+        
+        if annotation.isKind(of: MKUserLocation.self) {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "User")
+            annotationView?.image = UIImage(named: "ash")
+        }
+        return annotationView
+    }
+    
     var geoFire: GeoFire!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
