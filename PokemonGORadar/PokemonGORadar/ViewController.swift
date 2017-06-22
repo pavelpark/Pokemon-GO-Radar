@@ -23,6 +23,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.userTrackingMode = MKUserTrackingMode.follow
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        locationAuthStatus()
+    }
+    
     func locationAuthStatus() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             mapView.showsUserLocation = true
