@@ -40,6 +40,13 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             mapView.showsUserLocation = true 
         }
     }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
+        
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
     var geoFire: GeoFire!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
