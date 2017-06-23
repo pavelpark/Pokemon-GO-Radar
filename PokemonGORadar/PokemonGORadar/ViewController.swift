@@ -74,7 +74,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         return annotationView
     }
     
-    var geoFire: GeoFire!
+//    var geoFire: GeOFire!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
