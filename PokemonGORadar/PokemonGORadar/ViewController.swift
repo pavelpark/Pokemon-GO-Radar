@@ -24,8 +24,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         super.viewDidLoad()
         
         mapView.delegate = self
-        
         mapView.userTrackingMode = MKUserTrackingMode.follow
+        
+        geoFireRef = Database.database().reference()
+        geoFire = GeoFire(firebaseRef: geoFireRef)
     }
     
     override func viewDidAppear(_ animated: Bool) {
