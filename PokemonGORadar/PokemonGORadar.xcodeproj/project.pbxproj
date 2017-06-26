@@ -13,6 +13,7 @@
 		DB8EDB611EF3345900097B56 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB5A1EF3345900097B56 /* GFGeoHash.m */; };
 		DB8EDB621EF3345900097B56 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB5C1EF3345900097B56 /* GFGeoHashQuery.m */; };
 		DB8EDB631EF3345900097B56 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB5E1EF3345900097B56 /* GFQuery.m */; };
+		DB8EDB6C1F01B53500097B56 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8EDB6B1F01B53500097B56 /* PokeAnnotation.swift */; };
 		DBB6FA5A1EF1D45A0076CDAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */; };
 		DBB6FA5C1EF1D45A0076CDAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */; };
 		DBB6FA5F1EF1D45A0076CDAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB6FA5D1EF1D45A0076CDAA /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		DB8EDB5D1EF3345900097B56 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		DB8EDB5E1EF3345900097B56 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		DB8EDB671EF33EF100097B56 /* PokemonGoFinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokemonGoFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB8EDB6B1F01B53500097B56 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		DBB6FA561EF1D45A0076CDAA /* PokemonGORadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGORadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */,
+				DB8EDB6B1F01B53500097B56 /* PokeAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB8EDB601EF3345900097B56 /* GFBase32Utils.m in Sources */,
+				DB8EDB6C1F01B53500097B56 /* PokeAnnotation.swift in Sources */,
 				DBB6FA5C1EF1D45A0076CDAA /* ViewController.swift in Sources */,
 				DB8EDB611EF3345900097B56 /* GFGeoHash.m in Sources */,
 				DBB6FA5A1EF1D45A0076CDAA /* AppDelegate.swift in Sources */,
