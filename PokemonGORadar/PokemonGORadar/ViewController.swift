@@ -74,6 +74,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         return annotationView
     }
     
+    func creatingSighting(forLocation location: CLLocation, withPokemon pokeId: Int){
+        
+        geoFire.setLocation(location, forKey: "\(pokeId)")
+    }
 //    var geoFire: GeOFire!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
