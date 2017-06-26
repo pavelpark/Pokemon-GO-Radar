@@ -110,6 +110,32 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		DB8EDB681F01B47000097B56 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DB8EDB691F01B49300097B56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6FA5D1EF1D45A0076CDAA /* Main.storyboard */,
+				DBB6FA601EF1D45A0076CDAA /* Assets.xcassets */,
+				DBB6FA621EF1D45A0076CDAA /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DB8EDB6A1F01B49F00097B56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		DBB6FA4D1EF1D45A0076CDAA = {
 			isa = PBXGroup;
 			children = (
@@ -131,15 +157,13 @@
 		DBB6FA581EF1D45A0076CDAA /* PokemonGORadar */ = {
 			isa = PBXGroup;
 			children = (
+				DB8EDB6A1F01B49F00097B56 /* Model */,
+				DB8EDB691F01B49300097B56 /* View */,
+				DB8EDB681F01B47000097B56 /* Controller */,
 				DB8EDB4D1EF3345900097B56 /* GeoFire */,
-				DBB6FA6B1EF32A380076CDAA /* GoogleService-Info.plist */,
-				DBB6FA591EF1D45A0076CDAA /* AppDelegate.swift */,
-				DBB6FA5B1EF1D45A0076CDAA /* ViewController.swift */,
-				DBB6FA5D1EF1D45A0076CDAA /* Main.storyboard */,
-				DBB6FA601EF1D45A0076CDAA /* Assets.xcassets */,
-				DBB6FA621EF1D45A0076CDAA /* LaunchScreen.storyboard */,
-				DBB6FA651EF1D45A0076CDAA /* Info.plist */,
 				DB8EDB671EF33EF100097B56 /* PokemonGoFinder-Bridging-Header.h */,
+				DBB6FA6B1EF32A380076CDAA /* GoogleService-Info.plist */,
+				DBB6FA651EF1D45A0076CDAA /* Info.plist */,
 			);
 			path = PokemonGORadar;
 			sourceTree = "<group>";
