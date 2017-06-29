@@ -65,14 +65,27 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        let annoIdentifier = "Pokemon"
         var annotationView: MKAnnotationView?
         
         if annotation.isKind(of: MKUserLocation.self) {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "User")
             annotationView?.image = UIImage(named: "ash")
+        } else if let deqAnno = mapView.dequeueReusableAnnotationView(withIdentifier: annoIdentifier) {
+            annotationView = deqAnno
+            annotationView?.annotation = annotation
+//        } else {
+//            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annoIdentifier)
+//            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//            annotationView = av
         }
+//        if let annotationView  = annotationView, let anno  = annotation as?
+        
         return annotationView
     }
+    
+    
     
     func showSightingsOnMap(location: CLLocation) {
         let circleQuery = geoFire!.query(at: location, withRadius: 2.5)
