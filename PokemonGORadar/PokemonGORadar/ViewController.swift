@@ -75,12 +75,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         } else if let deqAnno = mapView.dequeueReusableAnnotationView(withIdentifier: annoIdentifier) {
             annotationView = deqAnno
             annotationView?.annotation = annotation
-//        } else {
-//            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annoIdentifier)
-//            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//            annotationView = av
+        } else {
+            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annoIdentifier)
+            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            annotationView = av
         }
-//        if let annotationView  = annotationView, let anno  = annotation as?
+        if let annotationView  = annotationView, let anno  = annotation as? pokeAnnotation {
+        
+            annotationView.canShowCallout = true
+            annotationView.image = UIImage(named: "\(anno.pokemonNumber)")
+        }
         
         return annotationView
     }
