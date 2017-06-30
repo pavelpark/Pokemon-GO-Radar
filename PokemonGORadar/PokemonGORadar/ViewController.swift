@@ -82,8 +82,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
         if let annotationView  = annotationView, let anno  = annotation as? pokeAnnotation {
         
+//            Giving each Pokemon an image with it's identical number
             annotationView.canShowCallout = true
             annotationView.image = UIImage(named: "\(anno.pokemonNumber)")
+//            Giving the Image a button
+            let btn = UIButton()
+            btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+            btn.setImage(UIImage(named: "map"), for: .normal)
+            annotationView.rightCalloutAccessoryView = btn
         }
         
         return annotationView
