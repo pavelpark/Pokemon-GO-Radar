@@ -138,7 +138,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             }
             
             let destination = MKMapItem(placemark: place)
-            destination.name = "Pokemon Sighting"
+            destination.name = "Pokemon Location"
             let regionDistance: CLLocationDistance = 1000
             let regionSpan = MKCoordinateRegionMakeWithDistance(anno.coordinate, regionDistance, regionDistance)
             
