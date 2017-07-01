@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					DBB6FA551EF1D45A0076CDAA = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6X88V8MC7R;
+						DevelopmentTeam = FQ3G8657EV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -435,7 +435,7 @@
 			baseConfigurationReference = CD2CCBFE6B8A386D45BF209B /* Pods-PokemonGORadar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6X88V8MC7R;
+				DEVELOPMENT_TEAM = FQ3G8657EV;
 				INFOPLIST_FILE = PokemonGORadar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.pokesearch;
@@ -450,7 +450,7 @@
 			baseConfigurationReference = 8E8EE337020BCF4EFCB077A0 /* Pods-PokemonGORadar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6X88V8MC7R;
+				DEVELOPMENT_TEAM = FQ3G8657EV;
 				INFOPLIST_FILE = PokemonGORadar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.pokesearch;
