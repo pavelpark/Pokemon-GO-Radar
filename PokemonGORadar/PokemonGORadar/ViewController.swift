@@ -156,5 +156,15 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         creatingSighting(forLocation: loc, withPokemon: Int(rand))
     }
     
+    @IBAction func segmentedControlAction(sender: UISegmentedControl!) {
+        switch (sender.selectedSegmentIndex) {
+        case 0:
+            mapView.mapType = .standard
+        case 1:
+            mapView.mapType = .satellite
+        default:
+            mapView.mapType = .hybrid
+        }
+    }
 }
 
