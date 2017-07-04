@@ -25,24 +25,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4H-S1-ToH">
-                                <rect key="frame" x="14" y="586" width="73" height="67"/>
+                                <rect key="frame" x="16" y="577" width="74" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="ezP-QY-Tw1"/>
-                                    <constraint firstAttribute="height" constant="67" id="hvG-lu-eBi"/>
+                                    <constraint firstAttribute="height" constant="72" id="Hgh-j5-dDh"/>
+                                    <constraint firstAttribute="width" constant="74" id="LsO-U1-vjy"/>
                                 </constraints>
                                 <state key="normal" image="pokeball"/>
                                 <connections>
                                     <action selector="spotRandomPokemon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zR1-c2-snN"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MLt-uJ-4Bg">
-                                <rect key="frame" x="48" y="20" width="278" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MLt-uJ-4Bg">
+                                <rect key="frame" x="115" y="605" width="244" height="29"/>
+                                <color key="backgroundColor" red="0.94498950242996216" green="0.55843555927276611" blue="0.21681514382362366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="IY5-UJ-LMK"/>
+                                    <constraint firstAttribute="width" constant="244" id="wMb-EP-ayg"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Standard"/>
                                     <segment title="Satellite"/>
                                     <segment title="Hybrid"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="segmentedControlActionWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="f2F-mM-e5T"/>
                                 </connections>
@@ -50,12 +55,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="D4H-S1-ToH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="4gb-4m-R36"/>
                             <constraint firstAttribute="trailing" secondItem="hE9-e9-iaf" secondAttribute="trailing" id="9Ou-Fh-E35"/>
                             <constraint firstItem="hE9-e9-iaf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AaV-Qt-mhJ"/>
                             <constraint firstItem="hE9-e9-iaf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ECe-0R-tcA"/>
+                            <constraint firstItem="MLt-uJ-4Bg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="585" id="Hxq-Qh-MbR"/>
+                            <constraint firstItem="MLt-uJ-4Bg" firstAttribute="leading" secondItem="D4H-S1-ToH" secondAttribute="trailing" constant="25" id="TJR-V0-oc4"/>
+                            <constraint firstItem="D4H-S1-ToH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="UWu-eN-mAR"/>
+                            <constraint firstAttribute="trailing" secondItem="MLt-uJ-4Bg" secondAttribute="trailing" constant="16" id="Wba-G2-3UN"/>
+                            <constraint firstItem="D4H-S1-ToH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="557" id="XdC-Il-Kag"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hE9-e9-iaf" secondAttribute="bottom" id="YVx-iR-tIo"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D4H-S1-ToH" secondAttribute="bottom" constant="14" id="uMa-in-I3j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MLt-uJ-4Bg" secondAttribute="bottom" constant="34" id="ZgF-wW-TmW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D4H-S1-ToH" secondAttribute="bottom" constant="18" id="iLW-3m-Vsa"/>
                         </constraints>
                     </view>
                     <connections>
